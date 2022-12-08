@@ -18,6 +18,16 @@ bindings
     , <&macro_release &kp LCTRL>
     ;
 };
+macro_cut: macro_cut{
+compatible = "zmk,behavior-macro";
+label = "macro_cut";
+#binding-cells = <0>;
+bindings
+    = <&macro_press &kp LCTRL>
+    , <&macro_tap &kp X>
+    , <&macro_release &kp LCTRL>
+    ;
+};
 macro_right_desktop: macro_right_desktop{
 compatible = "zmk,behavior-macro";
 label = "macro_right_desktop";
